@@ -4,7 +4,7 @@ from turtle import bgcolor, color
 #---------------------------------
 #config des 'command'
 def estValide() :
-    if user.get() == "user" and mdp.get()=="mdp":
+    if user.get() == "test" and mdp.get()=="test":
         label_login["text"]="Login correct"
     else:
         label_login["text"]="Login incorrect"
@@ -40,8 +40,8 @@ label_login.config(fg='white')
 
 hidden = True
 
-hide = PhotoImage(file='C:///Users///barbe///Pictures///pythonimg///hidemdp.png')
-view = PhotoImage(file='C:///Users///barbe///Pictures///pythonimg///viewmdp.png')
+hide = PhotoImage(file='Pictures///pythonimg///hidemdp.png')
+view = PhotoImage(file='Pictures///pythonimg///viewmdp.png')
 
 btnvalide = Button(fenetre,text="Valider",command=estValide, width=20)
 entry_user = Entry(fenetre, textvariable=user)
